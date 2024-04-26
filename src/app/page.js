@@ -29,7 +29,7 @@ export default function Home() {
             <span className="underline">Real-time</span> Collaborative Code Editor for Developers
             </h3>
             <p className="py-6">
-              Empower your team's coding experience with real-time
+              Empower your team&apos;ss coding experience with real-time
               collaboration. Seamlessly edit code together from anywhere,
               fostering creativity and efficiency
             </p>

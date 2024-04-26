@@ -8,6 +8,7 @@ export default function Page() {
             <div className="hero-content flex-col lg:flex-row">
                 <Image
                     src={goku}
+                    alt=""
                 />
             </div>
         </div>

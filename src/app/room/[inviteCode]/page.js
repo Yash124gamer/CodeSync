@@ -27,7 +27,6 @@ export default function Page({ params }) {
   useEffect(()=>{
     const isMobileDevice = window.matchMedia("(max-width: 768px)").matches;
     setIsMobile(isMobileDevice);
-    console.log(isMobile);
   },[]);
 
     return isConnected.state  ? (

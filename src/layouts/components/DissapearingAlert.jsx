@@ -18,7 +18,7 @@ export default function DissapearingAlert({children , timeout=3000}){
     },[timeout]);
 
     return (
-        <div role="alert" className="alert alert-success" style={{ opacity: visible ? '1' : '0' }}>
+        <div role="alert" className="alert alert-success" style={{ opacity: visible ? "1" : "0" }}>
             <IoHappyOutline size={23}/>
             <span>{children}</span>
         </div>

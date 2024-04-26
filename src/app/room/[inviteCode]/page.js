@@ -25,10 +25,10 @@ export default function Page({ params }) {
   }
 
   useEffect(()=>{
-    const isMobileDevice = window.matchMedia('(max-width: 768px)').matches;
+    const isMobileDevice = window.matchMedia("(max-width: 768px)").matches;
     setIsMobile(isMobileDevice);
     console.log(isMobile);
-  })
+  },[]);
 
     return isConnected.state  ? (
       <div className="min-h-screen bg-base-200">

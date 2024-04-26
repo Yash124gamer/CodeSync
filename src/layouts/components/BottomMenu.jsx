@@ -19,8 +19,8 @@ export default function BottomMenu({ isMobile , disconnect , setShow}){
     if(response){
       setShow(true);
       setTimeout(() => {
-        localStorage.removeItem('inviteCode');
-        router.push('/');
+        localStorage.removeItem("inviteCode");
+        router.push("/");
       }, 2200);
     }
   }
@@ -40,10 +40,10 @@ export default function BottomMenu({ isMobile , disconnect , setShow}){
             <li>
               <span> Configure <MdSettingsEthernet size={23}/></span>
             </li>
-            <li  onClick={()=>document.getElementById('share-modal').showModal()}>
+            <li  onClick={()=>document.getElementById("share-modal").showModal()}>
               <span> Share <IoMdShare size={23}/></span>
             </li>
-            <li onClick={()=>document.getElementById('leave-modal').showModal()}>
+            <li onClick={()=>document.getElementById("leave-modal").showModal()}>
               <span> Leave Room <IoExit size={23}/></span>
             </li>
           </ul>
@@ -52,10 +52,10 @@ export default function BottomMenu({ isMobile , disconnect , setShow}){
             <li>
               <span><MdSettingsEthernet size={23}/></span>
             </li>
-            <li  onClick={()=>document.getElementById('share-modal').showModal()}>
+            <li  onClick={()=>document.getElementById("share-modal").showModal()}>
               <span><IoMdShare size={23}/></span>
             </li>
-            <li onClick={()=>document.getElementById('leave-modal').showModal()}>
+            <li onClick={()=>document.getElementById("leave-modal").showModal()}>
               <span><IoExit size={23}/></span>
             </li>
           </ul>

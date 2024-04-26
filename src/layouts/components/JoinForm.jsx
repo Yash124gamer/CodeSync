@@ -51,7 +51,7 @@ export default function JoinForm({setShowForm}){
                 }
             </button>
           </div>
-          <p className="py-4">Don't have an Invite code ? Create Your <button className="btn btn-sm" onClick={()=>{setShowForm(false)}} style={{cursor:"pointer"}}>own Room</button></p>
+          <p className="py-4">Don"t have an Invite code ? Create Your <button className="btn btn-sm" onClick={()=>{setShowForm(false)}} style={{cursor:"pointer"}}>own Room</button></p>
         </React.Fragment>
     )
 }

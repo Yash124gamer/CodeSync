@@ -16,7 +16,7 @@ export default function DissapearingText({children , timeout=1500}){
     },[timeout]);
 
     return (
-            <span style={{ opacity: visible ? '1' : '0' }}>{children}</span>
+            <span style={{ opacity: visible ? "1" : "0" }}>{children}</span>
     )
 
 }

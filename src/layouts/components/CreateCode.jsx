@@ -13,14 +13,14 @@ export default function CreateCode({ setShowForm }){
     useEffect(()=>{
         //This Function will Fetch a new Invite Code from the Backend and store it into the local Storage
         async function fetchData(){
-            const response = await fetch('http://localhost:3000/InviteCode')
+            const response = await fetch("http://localhost:3000/InviteCode")
             const responseData = await response.text();
-            localStorage.setItem('inviteCode', responseData);                             // Storing the Invite Code inthe local storage to prevent refetching the data again & again
+            localStorage.setItem("inviteCode", responseData);                             // Storing the Invite Code inthe local storage to prevent refetching the data again & again
             setInviteCode(responseData);
         };
 
-        const cachedCode = localStorage.getItem('inviteCode');                            // Getting Invite code from the local Storage 
-        if (cachedCode) {                                                                 // If code exist's in local storage then we use it else we fetch a new code
+        const cachedCode = localStorage.getItem("inviteCode");                            // Getting Invite code from the local Storage 
+        if (cachedCode) {                                                                 // If code exist"s in local storage then we use it else we fetch a new code
             setInviteCode(cachedCode);
         } else {
             // Fetch the invite code from the server

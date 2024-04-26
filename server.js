@@ -3,11 +3,10 @@ const next = require("next");
 const { Server } = require("socket.io");
 
 const dev = process.env.NODE_ENV !== "production";
-const hostname = "0.0.0.0";
-console.log(hostname);
+const hostname = "codesync-yash";
 const port = 3000;
 // when using middleware `hostname` and `port` must be provided below
-const app = next({ hostname });
+const app = next({ dev , hostname });
 const handler = app.getRequestHandler();
 
 app.prepare().then(() => {

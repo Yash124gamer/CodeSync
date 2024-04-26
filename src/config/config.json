@@ -1,5 +1,6 @@
 {
     "site":{
-        "title": "CodeSync"
+        "title": "CodeSync",
+        "host" : "https://quiet-mooncake-8ff89f.netlify.app/"
     }
 }

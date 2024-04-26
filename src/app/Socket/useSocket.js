@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import io from 'socket.io-client';
+import config from "@/config/config.json";
 
 const useSocket = (roomId) => {
   const [socket, setSocket] = useState(null);
@@ -24,7 +25,7 @@ const useSocket = (roomId) => {
     //This Function will check if the RoomID is created by a user or not
     const checkRoomID = async ()=>{
 
-      const response = await fetch('http://localhost:3000/InviteCode',{
+      const response = await fetch(`${config.site.host}InviteCode`,{
         method:"POST",
         body : JSON.stringify({code : roomId}),
         headers: {

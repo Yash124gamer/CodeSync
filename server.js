@@ -3,7 +3,7 @@ const next = require("next");
 const { Server } = require("socket.io");
 
 const dev = process.env.NODE_ENV !== "production";
-const hostname = "codesync-yash";
+const hostname = "codesync-yash.netlify.app";
 const port = 3000;
 // when using middleware `hostname` and `port` must be provided below
 const app = next({ dev , hostname });

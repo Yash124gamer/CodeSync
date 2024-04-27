@@ -25,7 +25,7 @@ const useSocket = (roomId) => {
     //This Function will check if the RoomID is created by a user or not
     const checkRoomID = async ()=>{
 
-      const response = await fetch(config.api.checkCode,{
+      const response = await fetch(`${config.api.checkCode}`,{
         method:"POST",
         body : JSON.stringify({code : roomId}),
         headers: {

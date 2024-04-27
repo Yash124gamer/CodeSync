@@ -1,6 +1,10 @@
 {
     "site":{
         "title": "CodeSync",
-        "host" : "https://codesync-yash.netlify.app/"
+        "host" : "codesync-yash"
+    },
+    "api":{
+        "createCode":"http://codesync-yash.netlify.app/InviteCode",
+        "checkCode" : "http://codesync-yash.netlify.app/InviteCode"
     }
 }

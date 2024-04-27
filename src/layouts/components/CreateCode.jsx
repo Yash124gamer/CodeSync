@@ -14,7 +14,7 @@ export default function CreateCode({ setShowForm }){
     useEffect(()=>{
         //This Function will Fetch a new Invite Code from the Backend and store it into the local Storage
         async function fetchData(){
-            const response = await fetch("http://codesync-yash.netlify.app/InviteCode");
+            const response = await fetch(config.api.createCode)
             const responseData = await response.text();
             localStorage.setItem("inviteCode", responseData);                             // Storing the Invite Code inthe local storage to prevent refetching the data again & again
             setInviteCode(responseData);
